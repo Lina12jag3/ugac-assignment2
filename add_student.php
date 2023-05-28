@@ -1,10 +1,10 @@
 <?php
-// Include the database connection file
+
 include 'db_connection.php';
 
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  // Retrieve the form data
+  
   $name = $_POST['name'];
   $rollNumber = $_POST['roll_number'];
   $department = $_POST['department'];
@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           VALUES ('$name', '$rollNumber', '$department', '$hostel')";
 
   if ($conn->query($sql) === TRUE) {
-    // Redirect back to the landing page
+    
     header("Location: index.php");
     exit();
   } else {
@@ -28,8 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 <head>
   <title>Add New Student</title>
-  <!-- Include any external dependencies here -->
-  <!-- Add CSS styles, JavaScript libraries, etc. -->
+  
 </head>
 <body bgcolor="teal">
   <h1 ><center>Add New Student</center></h1>

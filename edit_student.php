@@ -44,8 +44,7 @@ if (isset($_GET['id'])) {
 <html>
 <head>
   <title>Edit Student Details</title>
-  <!-- Include any external dependencies here -->
-  <!-- Add CSS styles, JavaScript libraries, etc. -->
+  
 </head>
 <body bgcolor="teal">
   <h1 align=center>Edit Student Details</h1>
